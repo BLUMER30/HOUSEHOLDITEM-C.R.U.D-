@@ -99,9 +99,9 @@ const __dirname = path.dirname(__filename);
 // Path to items JSON file
 const itemsPath = path.join(__dirname, '../data/items.json');
 
-// ============================================
+
 // Initialize file if not exists
-// ============================================
+
 const initializeFile = () => {
     if (!fs.existsSync(itemsPath)) {
         const dir = path.dirname(itemsPath);
@@ -112,26 +112,24 @@ const initializeFile = () => {
     }
 };
 
-// ============================================
+
 // Read items from JSON file
-// ============================================
+
 const readItems = () => {
     initializeFile();
     const jsonString = fs.readFileSync(itemsPath, 'utf8');
     return JSON.parse(jsonString);
 };
 
-// ============================================
+
 // Write items to JSON file
-// ============================================
+
 const writeItems = (items) => {
     const jsonString = JSON.stringify(items, null, 2);
     fs.writeFileSync(itemsPath, jsonString, 'utf8');
 };
 
-// ============================================
 // CRUD OPERATIONS
-// ============================================
 
 export const getAllHouseHoldItems = async (req, res) => {
     try {
