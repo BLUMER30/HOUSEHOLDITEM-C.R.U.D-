@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Toothpaste",
+    "category": "bathroom",
+    "source": "Online",
+    "brand": "Colgate",
+    "quantity": 3,
+    "price": 2.5
+  },
+  {
+    "id": 2,
+    "name": "Toothpaste",
+    "category": "bathroom",
+    "source": "Online",
+    "brand": "Colgate",
+    "quantity": 3,
+    "price": 2.5
+  }
+]

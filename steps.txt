@@ -1,0 +1,12 @@
+- Create the file
+    - Check if the file is present, if it is not create it
+
+- Load the json file --> string
+
+- Convert to a object with json.parse
+
+- Add new items to it 
+
+- Convert back to string -- json.stringify
+
+- Save the string to a json file. 
