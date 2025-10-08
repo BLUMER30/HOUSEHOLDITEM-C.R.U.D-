@@ -12,7 +12,14 @@ const sequelize = new Sequelize(
     {
         host: process.env.DB_HOST,
         port: process.env.DB_PORT,
-        dialect, 
+        dialect,
+        dialectOptions: {
+    ssl: {
+        require: true, 
+        // 👇 This is the essential part for external cloud hosts
+        rejectUnauthorized: false
+    }
+}
     }
 );
 
