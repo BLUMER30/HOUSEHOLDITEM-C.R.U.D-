@@ -1,4 +1,4 @@
-/*import HouseHoldItems from "../models/categories.js";
+import HouseHoldItems from "../models/categories.js";
 
 
 
@@ -42,7 +42,7 @@ export const createHouseHoldItem = async (req, res) => {
 
     try {
 
-       /* const items = readItems();
+       const items = readItems();
 
         const bodyFields = Object.keys(req.body);
 
@@ -87,9 +87,9 @@ export const deleteHouseHoldItem = async (req, res) => {
         await householditem.destroy()
 
         res.json({message: "Item destroyed"});
-};*/
+};
 
-import fs from 'fs';
+/*import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from "url";
 
@@ -240,3 +240,4 @@ export const deleteHouseHoldItem = async (req, res) => {
         res.status(400).json({error: error.message});
     }
 };
+*/
